@@ -1,3 +1,13 @@
+##
+## Makefile for Malloc in /Users/hellstasis/Documents/ETNA/Master/IDV-DEVC4/git/src
+## 
+## Made by LALOS Bastien
+## Login   <lalos_b@etna-alternance.net>
+## 
+## Started on  Tue Jan 16 12:56:16 2018 LALOS Bastien
+## Last update Tue Jan 16 12:56:24 2018 LALOS Bastien
+##
+
 ENV = $(echo uname)
 NAME = libmy_malloc
 OBJECTS = $(patsubst %.c, %.o, $(wildcard *.c))

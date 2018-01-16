@@ -1,3 +1,13 @@
+/*
+** main.c for Malloc in /Users/hellstasis/Documents/ETNA/Master/IDV-DEVC4/git/src
+** 
+** Made by LALOS Bastien
+** Login   <lalos_b@etna-alternance.net>
+** 
+** Started on  Tue Jan 16 12:55:45 2018 LALOS Bastien
+** Last update Tue Jan 16 12:55:59 2018 LALOS Bastien
+*/
+
 #include <stdlib.h>
 #include <stdio.h>
 
