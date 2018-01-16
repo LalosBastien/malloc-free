@@ -6,7 +6,7 @@
 ** Login   <lalos_b@etna-alternance.net>
 ** 
 ** Started on  Tue Jan 16 12:55:45 2018 LALOS Bastien
-** Last update Tue Jan 16 16:38:13 2018 LALOS Bastien
+** Last update Tue Jan 16 16:37:04 2018 LALOS Bastien
 */
 
 #include <stdlib.h>
@@ -28,6 +28,7 @@ void    *malloc2(size_t size)
   void *p;
   p = sbrk(0);
 
+  /*uint8_t *b = (uint8_t*) p;*/
   printf("Pointer value => %p\n", ((uint8_t*) p));
 
   if (sbrk(size) == (void*) -1)

@@ -17,11 +17,10 @@ RUN make
 # Start
 #ENTRYPOINT ["./libmy_malloc"]
 
-
 FROM debian:8
 
 WORKDIR /root/
 
 COPY --from=build /app/libmy_malloc .
 
-CMD ["./libmy_malloc"]
+ENTRYPOINT ["./libmy_malloc"]
