@@ -5,7 +5,7 @@
 ** Login   <lalos_b@etna-alternance.net>
 ** 
 ** Started on  Wed Jan 31 15:23:53 2018 LALOS Bastien
-** Last update Tue Feb  6 21:25:10 2018 LALOS Bastien
+** Last update Tue Feb  6 21:17:43 2018 LALOS Bastien
 */
 
 #ifndef LIB_MALLOC_H_
@@ -33,9 +33,6 @@ struct t_block
   int is_free;
   
 };
-
-extern struct t_block	*first;
-extern struct t_block	*last;
 
 pthread_mutex_t global_malloc_lock;
 

@@ -5,17 +5,17 @@
 ## Login   <lalos_b@etna-alternance.net>
 ## 
 ## Started on  Tue Jan 16 12:56:16 2018 LALOS Bastien
-## Last update Wed Jan 31 16:28:20 2018 LALOS Bastien
+## Last update Tue Feb  6 20:48:28 2018 LALOS Bastien
 ##
 
 ENV = $(shell uname)
 NAME = libmy_malloc_$(ENV).so
 LINK_NAME = libmy_malloc.so
 OBJECTS = $(patsubst src/%.c, src/%.o, $(wildcard src/*.c))
-HEADERS = $(wildcard include/*.h)
+##HEADERS = $(wildcard include/*.h)
 
 CC = gcc
-CFLAGS = -ggdb -W -Wall -Werror -Wextra -ansi -pedantic -fPIC
+CFLAGS = -ggdb -W -Wall -Werror -Wextra -ansi  -fPIC
 RM = rm
 LN = ln
 

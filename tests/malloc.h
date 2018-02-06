@@ -5,7 +5,7 @@
 ** Login   <lalos_b@etna-alternance.net>
 ** 
 ** Started on  Wed Jan 31 15:23:53 2018 LALOS Bastien
-** Last update Tue Feb  6 21:25:10 2018 LALOS Bastien
+** Last update Tue Feb  6 21:30:07 2018 LALOS Bastien
 */
 
 #ifndef LIB_MALLOC_H_
@@ -34,8 +34,8 @@ struct t_block
   
 };
 
-extern struct t_block	*first;
-extern struct t_block	*last;
+struct t_block	*first;
+struct t_block	*last;
 
 pthread_mutex_t global_malloc_lock;
 
@@ -50,6 +50,5 @@ int	printf(const char *format, ...);
 
 /* MyLib functions */
 void*		malloc(size_t size);
-void		free(void *block);
 void		debug();
 struct t_block	*get_block(size_t size);
