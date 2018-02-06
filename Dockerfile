@@ -29,7 +29,7 @@ WORKDIR /root/
 COPY --from=build /app/libmy_malloc_Linux.so .
 COPY tests/ .
 
-#ENTRYPOINT ["sh", "launch_test.sh"]
+ENTRYPOINT ["sh", "launch_test.sh"]
 
 ### DEBUG ### 
-ENTRYPOINT ["bash"]
+#ENTRYPOINT ["bash"]

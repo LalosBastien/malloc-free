@@ -6,7 +6,7 @@
 ** Login   <lalos_b@etna-alternance.net>
 ** 
 ** Started on  Tue Jan 16 12:55:45 2018 LALOS Bastien
-** Last update Tue Feb  6 21:32:17 2018 LALOS Bastien
+** Last update Tue Feb  6 21:48:00 2018 LALOS Bastien
 */
 
 #include "malloc.h"
@@ -30,7 +30,8 @@ int     main(int argc, char **argv)
   malloc(sizeof(int) * 8);
   malloc(12345 * sizeof(char));
   malloc(132454008);
-  
+  malloc(42 * sizeof(unsigned int));
+  malloc(18 * sizeof(size_t));  
   debug();
   return 0;
 }

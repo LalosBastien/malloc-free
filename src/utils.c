@@ -5,7 +5,7 @@
 ** Login   <lalos_b@etna-alternance.net>
 ** 
 ** Started on  Tue Feb  6 19:22:41 2018 LALOS Bastien
-** Last update Tue Feb  6 20:38:24 2018 LALOS Bastien
+** Last update Tue Feb  6 22:05:12 2018 LALOS Bastien
 */
 
 #include "../include/malloc.h"
@@ -27,9 +27,12 @@ void debug()
 {
   
   struct t_block  *block = first;
-  printf("first block = %p, last block = %p \n", (void*)first, (void*)last);
+  printf("\n=== Allocate memory block list ===\n\n");
+  printf("first block = %p, last block = %p \n\n", (void*)first, (void*)last);
   while(block) {
     printf("addr = %p, size = %u, is_free=%u, next=%p \n",(void*)block, (unsigned)block->size, block->is_free, (void*)block->next);
     block = block->next;
         }
+
+  printf("\n====================================\n\n");
 }

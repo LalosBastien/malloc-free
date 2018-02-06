@@ -6,7 +6,7 @@
 ** Login   <lalos_b@etna-alternance.net>
 ** 
 ** Started on  Wed Jan 31 15:18:31 2018 LALOS Bastien
-** Last update Tue Feb  6 21:26:36 2018 LALOS Bastien
+** Last update Tue Feb  6 21:45:31 2018 LALOS Bastien
 */
 
 #include "../include/malloc.h"
@@ -53,7 +53,7 @@ void	*malloc(size_t size)
   if (last)
     last->next = r_block;
   
-  last = r_block;
+    last = r_block;
   pthread_mutex_unlock(&global_malloc_lock);
 
   return (void*)(r_block + 1);

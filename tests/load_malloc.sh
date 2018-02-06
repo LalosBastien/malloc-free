@@ -5,7 +5,8 @@
 ## Login   <lalos_b@etna-alternance.net>
 ## 
 ## Started on  Tue Feb  6 15:31:31 2018 LALOS Bastien
-## Last update Tue Feb  6 15:31:44 2018 LALOS Bastien
+## Last update Tue Feb  6 22:03:31 2018 LALOS Bastien
 ##
 
-export LD_PRELOAD=`pwd`/libmy_malloc_Linux.so
+export LD_PRELOAD=$PWD/libmy_malloc_Linux.so
+

@@ -5,7 +5,7 @@
 ** Login   <lalos_b@etna-alternance.net>
 ** 
 ** Started on  Wed Jan 31 15:23:53 2018 LALOS Bastien
-** Last update Tue Feb  6 21:30:07 2018 LALOS Bastien
+** Last update Tue Feb  6 21:58:07 2018 LALOS Bastien
 */
 
 #ifndef LIB_MALLOC_H_
@@ -40,7 +40,7 @@ struct t_block	*last;
 pthread_mutex_t global_malloc_lock;
 
 /* CLib functions */
-char    *strcpy(char *dest, const char *src);
+char	*strcpy(char *dest, const char *src);
 void    perror(const char *s);
 void    *memset(void *str, int c, size_t n);
 char    *strerror(int errnum);
