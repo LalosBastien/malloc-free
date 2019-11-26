@@ -19,7 +19,7 @@ docker build -t munchks/malloc-free .
 docker run -ti munchks/malloc-free
 ```
 - Choose the test you want to execute
-```C
+```html
 ________________________
 < Let's stress a bit my malloc >
  ------------------------
