@@ -44,15 +44,12 @@ ________________________
 ### Informations ###
 
 Design pattern used : `First-Fit`.
+
 Consist to search the first block that match the requested memory size to
 aggregates free memory by scanning the entire region on request or when an allocation request does not find sufficient free memory.
 
-Pros :
-- Fast & Simple
-- Low overhead
-- It fits general purpose
-
-Cons :
-- Does not have a strategy to avoid memory fragmentation,
-- Does not implement a time deterministic strategy to find a free memory block.
-- Does not have protection or detection against memory boundary overwrites.
+Pros | Cons
+------------ | -------------
+Fast & Simple | Does not have a strategy to avoid memory fragmentation
+Low overhead | Does not implement a time deterministic strategy to find a free memory block.
+It fits general purpose | Does not have protection or detection against memory boundary overwrites.
