@@ -16,8 +16,7 @@ WORKDIR /app/
 # Build
 RUN make .PHONY
 
-# Start
-#ENTRYPOINT ["bash"]
+########################
 
 FROM debian:8
 
